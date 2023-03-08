@@ -1,0 +1,18 @@
+{
+  "name": "http-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aiden Bai",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "description": "--- title: Node HTTP Module description: A HTTP module server tags:   - http   - nodejs   - javascript ---",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "googleapis": "^112.0.0",
+    "nodemon": "^2.0.20",
+    "yarn": "^1.22.19"
+  }
+}

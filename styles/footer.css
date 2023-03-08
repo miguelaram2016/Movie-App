@@ -1,0 +1,118 @@
+/* Footer CSS */
+.footer {
+  position: absolute;
+  background-color: black;
+  min-height: 250px;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: clamp(8px, 14px, 20px);
+}
+
+/* Footer content blocks CSS */
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  column-gap: 1vw;
+  margin-inline: 10px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.footer-about,
+.footer-quotes,
+.footer-contact {
+  flex: 1;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+/* Footer about section CSS */
+.footer-about-link {
+  color: white;
+  font-size: clamp(10px, 20px, 30px);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .3s ease-in;
+}
+.footer-about-link:hover {
+  border-color: white;
+}
+.footer-about-content {
+  margin-top: 20px;
+}
+
+/* Footer contact section CSS */
+.footer-contact {
+  margin-top: 20px;
+  line-height: 20px;
+}
+.footer-email-link,
+.footer-number-link,
+.footer-locations-link {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s;
+}
+.footer-email-link:hover,
+.footer-number-link:hover,
+.footer-locations-link:hover {
+  opacity: .7;
+}
+
+@media screen and (orientation: portrait) {
+  .footer {
+    font-size: clamp(6px, 10px, 24px);
+  }
+  .footer-about-link {
+    font-size: clamp(8px, 16px, 24px);
+  }
+}
+
+
+/*
+.footer-share {
+  position: relative;
+  width: 30%;
+  margin: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.footer-share:hover {
+  opacity: .7;
+}
+.share-button {
+  background-color: white;
+  margin-top: 10px;
+}
+.share-icon {
+  max-width: 40%;
+  object-position: 10%;
+  filter: invert(100%);
+}
+.share-text {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  line-height: 14px;
+} */
+
+/* Footer company information */
+.company-name {
+  position: absolute;
+  bottom: 0;
+  color: lightgray;
+}

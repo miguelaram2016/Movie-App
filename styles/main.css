@@ -1,0 +1,152 @@
+/* Main CSS */
+.main {
+  min-height: 2000px;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-top: clamp(60px,5%,80px); /* Based on header height */
+  display: flex;
+}
+
+/* Temp logo CSS, not in use */
+.slogan {
+  text-transform: capitalize;
+  font-size: min(6vh, 72px, 10vw);
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: -1000;
+  background: linear-gradient(to right, rgb(67,124,205), rgb(69,214,202));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  animation: fade 1s ease-in 1s;
+  display: none;
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Wavy slogan CSS */
+
+.wavy-slogan {
+  position: absolute;
+  top: min(100px, 40vh);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.wavy-slogan span {
+  font-weight: 300;
+  font-style: italic;
+  flex-grow: 1;
+  display: inline-block;
+  color: white;
+  font-size: min(8vw, 72px, 10vw);
+  background: linear-gradient(to right, rgb(67,124,205), rgb(69,214,202));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  animation: fade 1s ease-in 1s;
+  animation: animate 6s ease-in-out infinite;
+  animation-delay: calc(0.2s * var(--i));
+
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* Mobile phone CSS */
+@media screen and (orientation: portrait) {
+  .wavy-slogan span {
+
+  }
+}
+
+/* Logo in the background CSS */
+.main .logo-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  pointer-events: none;
+  width: min(50vw,400px);
+}
+
+.page-content {
+  position: relative;
+  top: max(34px, 30vh);
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+.intro-container {
+  display: flex;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,.5);
+}
+
+.intro-image-container {
+  width: clamp(30vw, 40%, 50vw);
+}
+.intro-image {
+  width: min(50vw, 100%);
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.intro-message-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: max(8px, 2vw);
+  font-size: min(8vw, 20px, 5vh);
+  text-align: center;
+}
+
+.intro-message {
+  color: white;
+  padding: 8px;
+  font-size: min(8vw, 20px, 5vh);
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  .intro-container {
+    flex-direction: column;
+  }
+  .intro-image-container {
+    width: 100%;
+  }
+  .intro-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+}

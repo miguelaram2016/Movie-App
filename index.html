@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>El Mar Fitness</title>
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/logo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon--precomposed" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/sidebar.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script defer src="http://localhost:1738"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <button class="open-sidebar-button" onclick="openNav()">&#9776;</button>
+      <!--<div class="logo-container">
+        <a href="" target="_blank">
+          <img class="logo" src="icons/EMF Logo Transparent.png">
+        </a>
+      </div> -->
+      <div class="header-list">
+        <div class="dropdown">
+          <a class="header-link" href="" target="_blank">
+            Home
+          </a>
+        </div>
+        <div class="dropdown">
+          <a class="header-link" href="" target="_blank">
+            Training
+          </a>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="" target="_blank">
+              In-Person Training
+            </a>
+            <a class="dropdown-link" href="" target="_blank">
+              Duo Training
+            </a>
+            <a class="dropdown-link" href="" target="_blank">
+              Kickboxing
+            </a>
+            <a class="dropdown-link" href="" target="_blank">
+              Online Coaching
+            </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="header-link" href="" target="_blank">
+            About
+          </a>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="" target="_blank">
+              Contact
+            </a>
+            <a class="dropdown-link" href="" target="_blank">
+              Locations
+            </a>
+            <a class="dropdown-link" href="" target="_blank">
+              Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-icon-container">
+        <a href="https://www.instagram.com/elmarfitness/?hl=en" target="_blank">
+          <img class="social-media-icon" src="icons/icons8-instagram-500.png">
+        </a>
+      </div> 
+    </header>
+    <nav id="sidebar" class="sidebar">
+      <div class="close-sidebar-button-container">
+        <button class="close-sidebar-button" onclick="closeNav()">
+          &times;
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <div class="sidebar-list">
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Personal Training
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Duo Training
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Kickboxing
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Virtual Training
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              About Me
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Contact
+            </a>
+          </div>
+          <div class="sidebar-list-item">
+            <a class="sidebar-link" href="" target="_blank">
+              Locations
+            </a>
+          </div>
+        </div>
+        <div class="logo-container">
+          <a href="" target="_blank">
+            <img class="logo" src="icons/EMF Logo Transparent.png">
+          </a>
+        </div>  
+        <div class="company-name">
+          &copy; El Mar Fitness LLC
+        </div>
+      </div>  
+    </nav>
+    <main id="main" class="main">
+      <!--<div class="slogan">
+        Flow into a stronger you
+      </div>-->
+      <div class="wavy-slogan">
+        <span style="--i:1">F</span>
+        <span style="--i:2">l</span>
+        <span style="--i:3">o</span>
+        <span style="--i:4">w</span>
+        <span style="--i:5"> </span>
+        <span style="--i:6">I</span>
+        <span style="--i:7">n</span>
+        <span style="--i:8">t</span>
+        <span style="--i:9">o</span>
+        <span style="--i:10"> </span>
+        <span style="--i:11">A</span>
+        <span style="--i:12"></span>
+        <span style="--i:13">S</span>
+        <span style="--i:14">t</span>
+        <span style="--i:15">r</span>
+        <span style="--i:16">o</span>
+        <span style="--i:17">n</span>
+        <span style="--i:18">g</span>
+        <span style="--i:19">e</span>
+        <span style="--i:20">r</span>
+        <span style="--i:21"> </span>
+        <span style="--i:22">Y</span>
+        <span style="--i:23">o</span>
+        <span style="--i:24">u</span>
+      </div>
+      <div class="logo-container">
+        <img class="logo" src="icons/EMF Logo Transparent.png">
+      </div>
+      <div class="page-content">
+        <div class="intro-container">
+          <div class="intro-image-container">
+            <img class="intro-image" src="images/me.jpg">
+          </div>
+          <div class="intro-message-container">
+            Get strong with me! <br><br> My name is Miguel Ramirez, 
+            and I am an Austin-based personal trainer and online coach.
+            <!--<div class="intro-message">
+              Get strong with me! <br><br> My name is Miguel Ramirez, 
+              and I am an Austin-based personal trainer and online coach.
+            </div>-->
+          </div>
+        </div>
+        <div>
+          <h1>Sign Up Form</h1>
+          <form id="submit-form" action="/submit-form" method="POST">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div>
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" id="phoneNumber" name="phoneNumber">
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="">
+            <a class="footer-about-link" href="" target="_blank">
+              About
+            </a>
+          </div>
+          <div class="footer-about-content">
+            El Mar Fitness provides a modern take on the exercise and 
+            health industry. Strength is more than what can be seen;
+            it extends past the physical and encompasses the mental, 
+            psychosocial, and emotional aspects of an individual.
+          </div>
+        </div>
+        <div class="footer-quotes">
+          <div class="footer-quote">
+            "Gains by Miguel." - ND
+          </div>
+         <!--Maybe put sign up box here-->
+         <div class="footer-quote">
+            All aboard the gain train! &#x1f4aa;
+         </div>
+        </div>
+        <div class="footer-contact">
+          <div class="footer-email">
+            Email:
+            <a class="footer-email-link" href="mailto:mramirez@elmarfitness.com">
+              mramirez@elmarfitness.com
+            </a>
+            <!--Maybe put contact information here-->
+          </div>
+          <div class="footer-number">
+            Phone #: 
+            <a class="footer-number-link" href="tel:+15128970010">
+              (512) 897 - 0010
+            </a>
+          </div>
+          <div class="footer-locations">
+            <a class="footer-locations-link" href="" target="_blank">
+              Locations &rarr;
+            </a>
+          </div>
+          <!--<div class="footer-share">
+            <div id="share-button">
+              <img class="share-icon" src="icons/icons8-share-48.png">
+              <div class="share-text">
+                Share this page!
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="company-name">
+        &copy; El Mar Fitness LLC
+      </div>
+    </footer>
+    
+  </body>
+</html>

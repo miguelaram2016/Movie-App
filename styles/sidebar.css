@@ -1,0 +1,91 @@
+/* Sidebar CSS */
+.sidebar {
+  background-color: black;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: -1500px; /* Hidden initially by setting the sidebar offpage */
+  z-index: 1000;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  white-space: nowrap; /* Disable text wrapping */
+  transition: transform 0.5s, width .7s; 
+  padding-inline: max(10vw,20px);
+  width: min(120px, 100vw);
+}
+.sidebar--open {
+  transform: translateX(1500px);
+}
+
+/* Sidebar Button CSS*/
+.open-sidebar-button, 
+.close-sidebar-button {
+  background-color: transparent;
+  padding: min(8px,0.25vh,2vw) min(10px,1.5vw,2vh);
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  font-size: max(12px, 3vh);
+}
+.open-sidebar-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+.close-sidebar-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+  transition: .3s;
+  z-index: 1001;
+}
+.open-sidebar-button:hover,
+.close-sidebar-button:hover {
+  background-color: #444;
+}
+
+/* Sidebar content CSS */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Sidebar links CSS */
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5vh;
+  line-height: 6vh;
+  height: 100%;
+}
+.sidebar-link {
+  font-size: max(12px, 3.5vh);
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .3s ease-in;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar-link:hover {
+  border-color: white;
+}
+
+/* Sidebar logo CSS */
+.sidebar  .logo-container {
+  position: absolute;
+  bottom: 18px;
+  align-self: center;
+  max-width: 60%;
+}
+
+/* Mobile phone CSS */
+@media screen and (orientation: portrait) {
+  .sidebar-link {
+    font-size: max(10px, 2.5vh);
+  }
+}
+
